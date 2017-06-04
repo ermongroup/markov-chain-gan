@@ -1,5 +1,5 @@
 # Markov Chain GAN (MGAN)
-Code for [Generative Adversarial Training for Markov Chains](https://openreview.net/pdf?id=S1L-hCNtl) (ICLR 2017 Workshop Track).
+TensorFlow code for [Generative Adversarial Training for Markov Chains](https://openreview.net/pdf?id=S1L-hCNtl) (ICLR 2017 Workshop Track).
 
 Work by [Jiaming Song](tsong.me), [Shengjia Zhao](https://github.com/ShengjiaZhao) and [Stefano Ermon](cs.stanford.edu/~ermon).
 
@@ -26,6 +26,7 @@ Download and place the directory in `~/data/celeba_tfrecords`.
 ```
 python mgan.py [data] [model] -b [B] -m [M] -d [critic iterations] --gpus [gpus]
 ```
+where `B` defines the steps from noise to data, `M` defines the steps from data to data, and `[gpus]` defines the `CUDA_VISIBLE_DEVICES` environment variable.
 
 ### MNIST
 ```
@@ -33,8 +34,14 @@ python mgan.py mnist mlp -b 4 -m 3 -d 7 --gpus [gpus]
 ```
 
 ### CelebA
+Without shortcut connections:
 ```
 python mgan.py celeba conv -b 4 -m 3 -d 7 --gpus [gpus]
+```
+
+With shortcut connections (will observe a much slower transition):
+```
+python mgan.py celeba conv_res -b 4 -m 3 -d 7 --gpus [gpus]
 ```
 
 ### Custom Experiments
@@ -61,3 +68,6 @@ Without shortcut connections:
 
 With shortcut connections:
 ![CelebA 1-layer conv with shortcuts](figs/celeba_conv_res.png)
+
+## Contact
+[tsong@cs.stanford.edu](tsong@cs.stanford.edu)
