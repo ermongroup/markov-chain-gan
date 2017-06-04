@@ -1,3 +1,4 @@
 *.pyc
 .idea/
 logs/
+.DS_Store
