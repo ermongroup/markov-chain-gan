@@ -3,6 +3,8 @@ Code for [Generative Adversarial Training for Markov Chains](https://openreview.
 
 Work by [Jiaming Song](tsong.me), [Shengjia Zhao](https://github.com/ShengjiaZhao) and [Stefano Ermon](cs.stanford.edu/~ermon).
 
+<br/>
+
 ## Preprocessing
 Running the code requires some preprocessing.
 Namely, we transform the data to TensorFlow Records file to maximize speed 
@@ -18,7 +20,7 @@ Download and place the directory in `~/data/mnist_tfrecords`.
 The data used for training is [here](https://drive.google.com/open?id=0B0LzoDno7qkJX3p2YS1DODNrM3c).
 Download and place the directory in `~/data/celeba_tfrecords`.
 
-
+<br/>
 
 ## Running Experiments
 ```
@@ -45,10 +47,17 @@ It is easy to define your own problem and run experiments.
   - `epoch_size` and `logging_freq`
 - That's it!
 
+<br/>
 
 ## Figures
+Each row is from a single chain, where we sample for 50 time steps.
+
 ### MNIST
-![](figs/mnist_mlp.png)
+![MNIST MLP](figs/mnist_mlp.png)
+
 ### CelebA
-![](figs/celeba_conv.png)
-![](figs/celeba_conv_res.png)
+Without shortcut connections:
+![CelebA 1-layer conv](figs/celeba_conv.png)
+
+With shortcut connections:
+![CelebA 1-layer conv with shortcuts](figs/celeba_conv_res.png)
