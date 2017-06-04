@@ -1,9 +1,11 @@
 # Markov Chain GAN (MGAN)
-Code for "Generative Adversarial Training for Markov Chains" (ICLR 2017 Workshop)
+Code for [Generative Adversarial Training for Markov Chains](https://openreview.net/pdf?id=S1L-hCNtl) (ICLR 2017 Workshop Track).
+
+Work by [Jiaming Song](tsong.me), [Shengjia Zhao](https://github.com/ShengjiaZhao) and [Stefano Ermon](cs.stanford.edu/~ermon).
 
 ## Preprocessing
 Running the code requires some preprocessing.
-Namely, we transform the data is transformed to TensorFlow Records file to maximize speed 
+Namely, we transform the data to TensorFlow Records file to maximize speed 
 (as [suggested by TensorFlow](https://www.tensorflow.org/performance/performance_guide)).
 
 ### MNIST
