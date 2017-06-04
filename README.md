@@ -70,4 +70,4 @@ With shortcut connections:
 ![CelebA 1-layer conv with shortcuts](figs/celeba_conv_res.png)
 
 ## Contact
-[tsong@cs.stanford.edu](tsong@cs.stanford.edu)
+[tsong@cs.stanford.edu](mailto:tsong@cs.stanford.edu)
