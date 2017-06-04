@@ -44,3 +44,11 @@ It is easy to define your own problem and run experiments.
   - `def visualizer(model, name)` (If you need to generate figures)
   - `epoch_size` and `logging_freq`
 - That's it!
+
+
+## Figures
+### MNIST
+![](figs/mnist_mlp.png)
+### CelebA
+![](figs/celeba_conv.png)
+![](figs/celeba_conv_res.png)
