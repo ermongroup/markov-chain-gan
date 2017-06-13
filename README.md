@@ -1,7 +1,7 @@
 # Markov Chain GAN (MGAN)
 TensorFlow code for [Generative Adversarial Training for Markov Chains](https://openreview.net/pdf?id=S1L-hCNtl) (ICLR 2017 Workshop Track).
 
-Work by [Jiaming Song](tsong.me), [Shengjia Zhao](https://github.com/ShengjiaZhao) and [Stefano Ermon](cs.stanford.edu/~ermon).
+Work by [Jiaming Song](http://tsong.me), [Shengjia Zhao](http://szhao.me) and [Stefano Ermon](http://cs.stanford.edu/~ermon).
 
 <br/>
 
