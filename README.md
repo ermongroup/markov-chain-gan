@@ -71,3 +71,5 @@ With shortcut connections:
 
 ## Contact
 [tsong@cs.stanford.edu](mailto:tsong@cs.stanford.edu)
+
+Code for the Pairwise Discriminator is not available at this moment; I will add that when I have the time.
