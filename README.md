@@ -69,9 +69,20 @@ Without shortcut connections:
 With shortcut connections:
 ![CelebA 1-layer conv with shortcuts](figs/celeba_conv_res.png)
 
-### Related Projects
+## Related Projects
 [a-nice-mc](https://github.com/jiamings/a-nice-mc): adversarial training for efficient MCMC kernels, which is based on this project.
 
+## Citation
+If you use this code for your research, please cite our paper:
+
+```
+@article{song2017generative,
+  title={Generative Adversarial Training for Markov Chains},
+  author={Song, Jiaming and Zhao, Shengjia and Ermon, Stefano},
+  journal={ICLR 2017 (Workshop Track)},
+  year={2017}
+}
+```
 
 ## Contact
 [tsong@cs.stanford.edu](mailto:tsong@cs.stanford.edu)
