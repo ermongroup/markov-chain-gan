@@ -69,6 +69,10 @@ Without shortcut connections:
 With shortcut connections:
 ![CelebA 1-layer conv with shortcuts](figs/celeba_conv_res.png)
 
+### Related Projects
+[a-nice-mc](https://github.com/jiamings/a-nice-mc): adversarial training for efficient MCMC kernels, which is based on this project.
+
+
 ## Contact
 [tsong@cs.stanford.edu](mailto:tsong@cs.stanford.edu)
 
