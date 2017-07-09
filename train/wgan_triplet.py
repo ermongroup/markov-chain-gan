@@ -8,7 +8,7 @@ class Trainer(object):
                  data_sampler, noise_sampler,
                  b, m, scale=10.0):
         self.b_, self.m_ = b, m
-        self.name = 'wgan_gradient_penalty'
+        self.name = 'wgan_triplet'
         self.transition_cell = TransitionCell(transition_fn)
 
         self.input_size = transition_fn.input_size
