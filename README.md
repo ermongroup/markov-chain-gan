@@ -5,6 +5,15 @@ Work by [Jiaming Song](http://tsong.me), [Shengjia Zhao](http://szhao.me) and [S
 
 <br/>
 
+There are currently two versions:
+
+1. The version where all the generated data is compared with the real data with one discriminator score. (`mgan.py`)
+2. The version where the two sources from the generated data are compared with the real data separately. (`mgan_triplet.py`)
+
+Empirically these two versions display similar generation results.
+
+<br/>
+
 ## Preprocessing
 Running the code requires some preprocessing.
 Namely, we transform the data to TensorFlow Records file to maximize speed 
@@ -31,12 +40,14 @@ where `B` defines the steps from noise to data, `M` defines the steps from data 
 ### MNIST
 ```
 python mgan.py mnist mlp -b 4 -m 3 -d 7 --gpus [gpus]
+python mgan_triplet.py mnist mlp_triplet -b 4 -m 3 -d 7 --gpus [gpus]
 ```
 
 ### CelebA
 Without shortcut connections:
 ```
 python mgan.py celeba conv -b 4 -m 3 -d 7 --gpus [gpus]
+python mgan_triplet.py celeba conv_triplet -b 4 -m 3 -d 7 --gpus [gpus]
 ```
 
 With shortcut connections (will observe a much slower transition):
